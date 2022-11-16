@@ -1,0 +1,62 @@
+@font-face{font-family:"lora-regular";src:url(../fonts/lora/lora-regular-webfont.woff2) format("woff2") , url(../fonts/lora/lora-regular-webfont.woff) format("woff");font-style:normal;font-weight:normal}@font-face{font-family:"lora-italic";src:url(../fonts/lora/lora-italic-webfont.woff2) format("woff2") , url(../fonts/lora/lora-italic-webfont.woff) format("woff");font-style:normal;font-weight:normal}@font-face{font-family:"lora-bold";src:url(../fonts/lora/lora-bold-webfont.woff2) format("woff2") , url(../fonts/lora/lora-bold-webfont.woff) format("woff");font-style:normal;font-weight:normal}@font-face{font-family:"lora-bold-italic";src:url(../fonts/lora/lora-bolditalic-webfont.woff2) format("woff2") , url(../fonts/lora/lora-bolditalic-webfont.woff) format("woff");font-style:normal;font-weight:normal}@font-face{font-family:"montserrat-black";src:url(../fonts/montserrat/montserrat-black-webfont.woff2) format("woff2") , url(../fonts/montserrat/montserrat-black-webfont.woff) format("woff");font-style:normal;font-weight:normal}@font-face{font-family:"montserrat-extrabold";src:url(../fonts/montserrat/montserrat-extrabold-webfont.woff2) format("woff2") , url(../fonts/montserrat/montserrat-extrabold-webfont.woff) format("woff");font-style:normal;font-weight:normal}@font-face{font-family:"montserrat-bold";src:url(../fonts/montserrat/montserrat-bold-webfont.woff2) format("woff2") , url(../fonts/montserrat/montserrat-bold-webfont.woff) format("woff");font-style:normal;font-weight:normal}@font-face{font-family:"montserrat-semibold";src:url(../fonts/montserrat/montserrat-semibold-webfont.woff2) format("woff2") , url(../fonts/montserrat/montserrat-semibold-webfont.woff) format("woff");font-style:normal;font-weight:normal}@font-face{font-family:"montserrat-medium";src:url(../fonts/montserrat/montserrat-medium-webfont.woff2) format("woff2") , url(../fonts/montserrat/montserrat-medium-webfont.woff) format("woff");font-style:normal;font-weight:normal}@font-face{font-family:"montserrat-regular";src:url(../fonts/montserrat/montserrat-regular-webfont.woff2) format("woff2") , url(../fonts/montserrat/montserrat-regular-webfont.woff) format("woff");font-style:normal;font-weight:normal}@font-face{font-family:"montserrat-light";src:url(../fonts/montserrat/montserrat-light-webfont.woff2) format("woff2") , url(../fonts/montserrat/montserrat-light-webfont.woff) format("woff");font-style:normal;font-weight:normal}@font-face{font-family:"montserrat-extralight";src:url(../fonts/montserrat/montserrat-extralight-webfont.woff2) format("woff2") , url(../fonts/montserrat/montserrat-extralight-webfont.woff) format("woff");font-style:normal;font-weight:normal}@font-face{font-family:"montserrat-thin";src:url(../fonts/montserrat/montserrat-thin-webfont.woff2) format("woff2") , url(../fonts/montserrat/montserrat-thin-webfont.woff) format("woff");font-style:normal;font-weight:normal}
+html{
+  font-size: 10px;
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+html, body, #root{
+  height: 100%;
+}
+body {
+  background: #111;
+  font-family: "lora-regular", serif;
+  font-size: 1.7rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.765;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  word-wrap: break-word;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  color: #757575;
+}
+h1, h2, h3, h4, h5, h6 {
+  -webkit-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+  -webkit-font-variant-ligatures: common-ligatures;
+  -moz-font-variant-ligatures: common-ligatures;
+  font-variant-ligatures: common-ligatures;
+  text-rendering: optimizeLegibility;
+}
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+li {
+  display: list-item;
+}
+a {
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  line-height: inherit;
+  background: transparent;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+@media only screen and (max-width: 400px) {
+  html {
+    font-size: 9.411764705882353px;
+  }
+}

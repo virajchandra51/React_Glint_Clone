@@ -1,0 +1,215 @@
+.Header {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    height: 96px;
+    top: 0;
+    z-index: 500;
+}
+.Header .logo {
+    display: inline-block;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 50%;
+    left: 40px;
+    transform: translateY(-50%);
+    z-index: 501;
+}
+.Header .logo a{
+    display: block;
+    width: 80px;
+    margin: 9px 0 0 0;
+    padding: 0;
+    outline: 0;
+    border: none;
+    transition: all .3s ease-in-out;
+}
+.Header .header-nav {
+    display: block;
+    background: #0C0C0C;
+    color: rgba(255, 255, 255, 0.25);
+    font-family: "montserrat-light", sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.846;
+    padding: 3.6rem 3rem 3.6rem 3.6rem;
+    height: 100%;
+    width: 280px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 700;
+    overflow-y: auto;
+    overflow-x: hidden;
+    visibility: hidden;
+    transition: all .5s ease;
+    transform: translateX(100%);
+}
+.Header .header-nav p {
+    margin-bottom: 2.7rem;
+}
+.Header .header-nav a, .Header .header-nav a:visited {
+    color: rgba(255, 255, 255, .5);
+}
+.Header .header-nav .nav-close{
+    display: block;
+    height: 30px;
+    width: 30px;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 36px;
+    right: 30px;
+    font: 0/0 a;
+    text-shadow: none;
+    z-index: 800;
+}
+.Header .header-nav .nav-close span::before {
+    transform: rotate(-45deg);
+}
+.Header .header-nav .nav-close span::after {
+    transform: rotate(45deg);
+}
+.Header .header-nav .nav-close span::before,.Header .header-nav .nav-close span::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 12px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    left: 9px;
+    margin-top: -1px;
+}
+.Header .header-nav h3 {
+    font-family: "montserrat-semibold", sans-serif;
+    font-size: 11px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: .25rem;
+    margin-bottom: 4.8rem;
+    margin-top: 0.9rem;
+    color: #39b54a;
+}
+.Header .header-nav a:hover, .header-nav a:focus, .header-nav a:active {
+    color: #FFFFFF;
+}
+.Header .header-nav .nav-content {
+    position: relative;
+    left: 50px;
+    opacity: 0;
+    visibility: hidden;
+}
+.Header .header-nav .nav-content .nav-list {
+    font-family: "montserrat-regular", sans-serif;
+    font-size: 1.8rem;
+    margin: 3.6rem 0 3rem 0;
+    padding: 0 0 1.8rem 0;
+    list-style: none;
+}
+.Header .header-nav .nav-content .nav-list li {
+    padding-left: 0;
+    line-height: 4.5rem;
+}
+.Header .header-nav .nav-content .nav-list li a, .nav-list li a:visited {
+    color: #FFFFFF;
+}
+.Header .header-nav .nav-content .nav-social {
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    font-size: 1.8rem;
+}
+.Header .header-nav .nav-content .nav-social li {
+    margin-right: 12px;
+    padding-left: 0;
+    display: inline-block;
+}
+.Header .header-nav .nav-content .nav-social li a:hover, .nav-social li a:focus {
+    color: white;
+}
+.Header .header-nav .nav-content .nav-social li a {
+    color: rgba(255, 255, 255, .15);
+}
+.Header .toggle-menu {
+    position: fixed;
+    right: 38px;
+    top: 24px;
+    height: 42px;
+    width: 42px;
+    line-height: 42px;
+    font-family: "montserrat-medium", sans-serif;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    color: #39b54a;
+    transition: all .5s ease-in-out;
+}
+.Header .toggle-menu:hover, .Header .toggle-menu:focus {
+    color: #FFFFFF;
+}
+.Header .toggle-menu .menu-text {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -70px;
+    width: 70px;
+    padding-left: 12px;
+}
+.Header .toggle-menu .menu-icon {
+    display: block;
+    width: 22px;
+    height: 2px;
+    margin-top: -1px;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    right: auto;
+    bottom: auto;
+    background-color: white;
+}
+.Header .toggle-menu .menu-icon::before {
+    top: -9px;
+}
+.Header .toggle-menu .menu-icon::after {
+    bottom: -9px;
+}
+.Header .toggle-menu .menu-icon::before, .menu-icon::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    position: absolute;
+    left: 0;
+}
+.open-menu .header-nav {
+    transform: translateX(0);
+    visibility: visible;
+}
+.open-menu .header-nav .nav-content {
+    opacity: 1;
+    visibility: visible;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.3s;
+    left: 0;
+}
+
+@media only screen and (max-width: 600px)
+{
+    .Header {
+        height: 90px;
+    }
+    .Header .logo {
+        left: 30px;
+    }
+    .Header .toggle-menu {
+        right: 25px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .Header .toggle-menu .menu-text {
+        display: none;
+    }  
+}
